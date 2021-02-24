@@ -12,8 +12,10 @@
 
   <body>
     <%= render 'home/navbar' %>
-    <br>
     <div class="container-fluid">
+       <br>
+       <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
       <%= yield %>
     </div>
     <br>

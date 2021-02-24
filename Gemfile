@@ -13,6 +13,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootstrap', '~> 4.6'
 gem 'jquery-rails'
 gem 'stock_quote', '~> 3.0'
+gem 'devise', '~> 4.7', '>= 4.7.3'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false

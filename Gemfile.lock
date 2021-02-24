@@ -64,6 +64,7 @@ GEM
       public_suffix (>= 2.0.2, < 5.0)
     autoprefixer-rails (10.2.4.0)
       execjs
+    bcrypt (3.1.16)
     bindex (0.8.1)
     bootsnap (1.7.2)
       msgpack (~> 1.0)
@@ -84,6 +85,12 @@ GEM
     childprocess (3.0.0)
     concurrent-ruby (1.1.8)
     crass (1.0.6)
+    devise (4.7.3)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 4.1.0)
+      responders
+      warden (~> 1.2.3)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     erubi (1.10.0)
@@ -122,6 +129,7 @@ GEM
     nio4r (2.5.5)
     nokogiri (1.11.1-x64-mingw32)
       racc (~> 1.4)
+    orm_adapter (0.5.0)
     popper_js (1.16.0)
     public_suffix (4.0.6)
     puma (5.2.1)
@@ -162,6 +170,9 @@ GEM
       thor (~> 1.0)
     rake (13.0.3)
     regexp_parser (2.1.0)
+    responders (3.0.1)
+      actionpack (>= 5.0)
+      railties (>= 5.0)
     rest-client (2.0.2-x64-mingw32)
       ffi (~> 1.9)
       http-cookie (>= 1.0.2, < 2.0)
@@ -204,6 +215,8 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.7-x64-mingw32)
+    warden (1.2.9)
+      rack (>= 2.0.9)
     web-console (4.1.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -233,6 +246,7 @@ DEPENDENCIES
   bootstrap (~> 4.6)
   byebug
   capybara (>= 3.26)
+  devise (~> 4.7, >= 4.7.3)
   jbuilder (~> 2.7)
   jquery-rails
   mysql2 (~> 0.5)
